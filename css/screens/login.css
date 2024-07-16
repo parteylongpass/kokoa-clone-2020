@@ -1,0 +1,63 @@
+.welcome-header{
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.welcome-header__text{
+    width: 60%;
+    opacity: 0.5;
+    margin-bottom: 70px;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+}
+
+#login-form input{
+    padding: 20px 0px;
+    border: none;
+    font-size: 18px;
+}
+
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+#login-form input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:nth-child(2){
+    margin-bottom: 36px;
+}
+
+#login-form input:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+#login-form input:focus{
+    border-color: var(--yellow); /* submit 타입은 border가 none이라 상관없음! */
+}
+
+#login-form input[type="submit"]{
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#login-form a{
+    text-align: center; /* 블록 요소 안에서 인라인 요소의 정렬 설정 */
+    text-decoration: none;
+    color: inherit; /* login-form에 설정된 색깔이 없기 때문에 default 값인 black으로 설정됨 */
+    font-size: 14px;
+}
