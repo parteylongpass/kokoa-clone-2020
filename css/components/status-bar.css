@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: center;
     padding: 5px 3px;
+    position: fixed;
+    width: 100%;
 }
 
 .status-bar__column{
@@ -22,6 +24,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 5px;
 }
 
 .status-bar__column:nth-child(3) .fa-battery-half{
